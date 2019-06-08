@@ -5,7 +5,12 @@
   "author": "Dongwoo Lee <likedemian@me.com> (https://github.com/likedemian)",
   "license": "MIT",
   "dependencies": {
-    "koa": "2.7.0"
+    "dotenv": "8.0.0",
+    "joi": "14.3.1",
+    "koa": "2.7.0",
+    "koa-bodyparser": "4.2.1",
+    "koa-router": "7.4.0",
+    "mongoose": "5.5.13"
   },
   "devDependencies": {
     "eslint": "5.16.0",
@@ -15,8 +20,8 @@
     "eslint-plugin-promise": "4.1.1",
     "eslint-plugin-standard": "4.0.0"
   },
-  "scripts":{
-    "start": "node src",
-    "start:dev": "nodemon --watch src/ src/index.js"
+  "scripts": {
+    "start": "NODE_PATH=src node src",
+    "start:dev": "NODE_PATH=src nodemon --watch src/ src/index.js"
   }
 }
