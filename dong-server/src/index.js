@@ -13,7 +13,7 @@ const bodyParser = require('koa-bodyparser')
 mongoose.Promise = global.Promise
 
 mongoose.connect(process.env.MONGO_URI, {
-  useMongoClient: true
+  useNewUrlParser: true
 }).then(
   (response) => {
     console.log('Successfully connected to mongodb')
